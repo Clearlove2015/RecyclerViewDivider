@@ -17,17 +17,18 @@ import butterknife.ButterKnife;
  * Created by zc on 2018/9/4.
  */
 
-public class MyAdapter extends RecyclerView.Adapter {
+public class MyGridAdapter extends RecyclerView.Adapter {
     private List<Integer> mData;
 
-    public MyAdapter(List<Integer> mData) {
+    public MyGridAdapter(List<Integer> mData) {
         this.mData = mData;
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.item_rv, parent, false);
+        //网格Item
+        View view = inflater.inflate(R.layout.item_rv_grid, parent, false);
         return new ItemViewHolder(view);
     }
 

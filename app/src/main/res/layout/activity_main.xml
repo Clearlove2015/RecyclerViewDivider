@@ -2,11 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
-    <android.support.v7.widget.RecyclerView
+    <Button
+        android:id="@+id/btn_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/rv"/>
+        android:layout_height="wrap_content"
+        android:text="Linear模式"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grid模式"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_staggered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Staggered模式"
+        android:textAllCaps="false" />
+
 
 </LinearLayout>
